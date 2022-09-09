@@ -1,0 +1,159 @@
+{
+  "collections": [
+    {
+      "id": 0,
+      "name": "favorite",
+      "label": "Favorite"
+    },
+    {
+      "id": 1,
+      "name": "watched",
+      "label": "Watched"
+    },
+    {
+      "id": 2,
+      "name": "willWatch",
+      "label": "Will watch"
+    }
+  ],
+  "movies": [
+    {
+      "collectionId": 2,
+      "id": "200",
+      "title": "Outer Range",
+      "poster": "https://resizing.flixster.com/WJOVb6VcC1KbNV-pSQQSVD7_c_I=/ems.ZW1zLXByZC1hc3NldHMvdHZzZXJpZXMvZTg2NGQ3ZTUtODNhOC00YWM3LWEzYmYtYjcxNWU3YTk3MWYwLmpwZw=="
+    },
+    {
+      "collectionId": 1,
+      "title": "Uncharted",
+      "poster": "https://image.tmdb.org/t/p/original/tlZpSxYuBRoVJBOpUrPdQe9FmFq.jpg",
+      "id": "335787"
+    },
+    {
+      "collectionId": 1,
+      "title": "The Batman",
+      "poster": "https://image.tmdb.org/t/p/original/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+      "id": "414906"
+    },
+    {
+      "collectionId": 2,
+      "title": "Moonfall",
+      "poster": "https://image.tmdb.org/t/p/original/odVv1sqVs0KxBXiA8bhIBlPgalx.jpg",
+      "id": "406759"
+    },
+    {
+      "collectionId": 1,
+      "title": "The Bad Guys",
+      "poster": "https://image.tmdb.org/t/p/original/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg",
+      "id": "629542"
+    },
+    {
+      "collectionId": 2,
+      "title": "The Outfit",
+      "poster": "https://image.tmdb.org/t/p/original/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg",
+      "id": "799876"
+    },
+    {
+      "collectionId": 2,
+      "title": "Fantastic Beasts: The Secrets of Dumbledore",
+      "poster": "https://image.tmdb.org/t/p/original/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg",
+      "id": "338953"
+    },
+    {
+      "collectionId": 2,
+      "title": "Silverton Siege",
+      "poster": "https://image.tmdb.org/t/p/original/5HruMN0vvl84AqD7sCDXFNO4RhP.jpg",
+      "id": "951470"
+    },
+    {
+      "collectionId": 1,
+      "title": "Fortress: Sniper's Eye",
+      "poster": "https://image.tmdb.org/t/p/original/61J34xHVVdQHbJ4MSCWQo4e727v.jpg",
+      "id": "883502"
+    },
+    {
+      "collectionId": 1,
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "poster": "https://image.tmdb.org/t/p/original/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+      "id": "453395"
+    },
+    {
+      "collectionId": 1,
+      "title": "Ambulance",
+      "poster": "https://image.tmdb.org/t/p/original/zT5ynZ0UR6HFfWQSRf2uKtqCyWD.jpg",
+      "id": "763285"
+    },
+    {
+      "collectionId": 2,
+      "title": "Virus:32",
+      "poster": "https://image.tmdb.org/t/p/original/wZiF79hbhLK1U2Pj9bF67NAKXQR.jpg",
+      "id": "893370"
+    },
+    {
+      "collectionId": 1,
+      "title": "The Lost City",
+      "poster": "https://image.tmdb.org/t/p/original/neMZH82Stu91d3iqvLdNQfqPPyl.jpg",
+      "id": "752623"
+    },
+    {
+      "collectionId": 0,
+      "title": "The Northman",
+      "poster": "https://image.tmdb.org/t/p/original/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg",
+      "id": "639933"
+    },
+    {
+      "collectionId": 1,
+      "title": "Encanto",
+      "poster": "https://image.tmdb.org/t/p/original/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
+      "id": "568124"
+    },
+    {
+      "collectionId": 2,
+      "title": "Spider-Man: All Roads Lead to No Way Home",
+      "poster": "https://image.tmdb.org/t/p/original/e2LLmI5wKIrWGAy9Of3yyWu7Szn.jpg",
+      "id": "961651"
+    },
+    {
+      "collectionId": 1,
+      "title": "Tideland",
+      "poster": "https://image.tmdb.org/t/p/original/juYEAmlSniLwjBjTV2JQ489pAo5.jpg",
+      "id": "11559"
+    },
+    {
+      "collectionId": 0,
+      "title": "Sonic the Hedgehog 2",
+      "poster": "https://image.tmdb.org/t/p/original/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+      "id": "675353"
+    },
+    {
+      "collectionId": 1,
+      "title": "Tales from Earthsea",
+      "poster": "https://image.tmdb.org/t/p/original/67yYwCPq7NbxSF6BIIXCMD34sY0.jpg",
+      "id": "37933"
+    },
+    {
+      "collectionId": 1,
+      "title": "Charlie and the Chocolate Factory",
+      "poster": "https://image.tmdb.org/t/p/original/wfGfxtBkhBzQfOZw4S8IQZgrH0a.jpg",
+      "id": "118"
+    },
+    {
+      "collectionId": 0,
+      "title": "Coraline",
+      "poster": "https://image.tmdb.org/t/p/original/gPMh5rsVrDDAYMDbTcz6Up1DQ4z.jpg",
+      "id": "14836"
+    },
+    {
+      "collectionId": 2,
+      "title": "Jurassic World Dominion",
+      "poster": "https://image.tmdb.org/t/p/original/98kYjbpa4MNAeW6qw8Kb1o2ylLj.jpg",
+      "id": "507086"
+    },
+    {
+      "collectionId": 0,
+      "title": "Monster House",
+      "poster": "https://image.tmdb.org/t/p/original/zCRPr4bkO3ae0U1134vJ39xZnAG.jpg",
+      "id": "9297"
+    }
+  ]
+}

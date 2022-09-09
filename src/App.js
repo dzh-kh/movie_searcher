@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/app.css";
+// import AsyncSelect from "react-select/async";
+// import { validateYupSchema } from "formik";
+// import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Routes, Route } from "react-router-dom";
+import {
+  Header,
+  CatalogPage,
+  SingleMoviePage,
+  SingleCollectionPage,
+  SearchedTitleList,
+  UserPage,
+} from "./components";
+// import Footer from "./components/Footer";
+
+// const theme = createTheme({
+//   typography: {
+//     allVariants: {
+//       fontFamily: "Bebas Neue",
+//     },
+//   },
+// });
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <ThemeProvider theme={theme}> */}
+      <Header />
+      <Routes>
+        <Route path="/movie/:id/:section" element={<SingleMoviePage />} />
+        <Route path="/catalog/" element={<CatalogPage />} />
+        <Route path="/collection/:id" element={<SingleCollectionPage />} />
+        <Route path="/search/" element={<SearchedTitleList />} />
+        <Route path="/user/" element={<UserPage />} />
+      </Routes>
+      {/* <Footer /> */}
+      {/* </ThemeProvider> */}
+    </>
   );
 }
 
