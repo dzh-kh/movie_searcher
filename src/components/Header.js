@@ -39,18 +39,6 @@ export default function Header() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{
-              mr: 2,
-              display: { lg: "none", sx: "none", md: "none", sm: "flex" },
-            }}
-          >
-            <MenuIcon />
-          </IconButton>
           <Box style={{ display: "flex", alignItems: "center" }}>
             <Link style={{ textDecoration: "none", color: "white" }} to="/">
               <IconButton
@@ -59,7 +47,6 @@ export default function Header() {
                 color="inherit"
                 aria-label="open drawer"
               >
-                {" "}
                 LOGO
                 <AnchorIcon />
               </IconButton>
@@ -78,7 +65,11 @@ function NavBar() {
   return (
     <Link style={{ textDecoration: "none" }} to="/user">
       <IconButton sx={{ p: 0 }}>
-        <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+        <Avatar
+          alt="Remy Sharp"
+          src="/static/images/avatar/2.jpg"
+          sx={{ ml: "1rem" }}
+        />
       </IconButton>
     </Link>
   );
