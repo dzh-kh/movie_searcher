@@ -24,14 +24,16 @@
     "react-select": "^5.2.2",
     "react-three-state-checkbox": "^2.0.0",
     "redux": "^4.1.2",
+    "serve": "^14.0.1",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm start\"",
-    "start": "react-scripts start",
     "build": "DISABLE_ESLINT_PLUGIN='true' react-scripts build",
-    "test": "react-scripts test",
+    "start": "serve -s build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build",
     "lint": "eslint .",
     "lintfix": "eslint --fix ./",
     "server": "json-server -w src/server/db.json -p 3001"
