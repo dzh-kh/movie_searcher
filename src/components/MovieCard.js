@@ -11,7 +11,9 @@ function MovieCard({ isOpen, movieInfo, children }) {
     const image = new Image();
     image.src = poster;
     image.onload = () => setIsLoading(true);
-    return (image.onload = () => setIsLoading(false));
+    return (image.onload = () => {
+      setIsLoading(false);
+    });
   }, []);
   return (
     <Card

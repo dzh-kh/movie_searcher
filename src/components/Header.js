@@ -97,7 +97,7 @@ function SearchBar() {
     if (value.length > 0)
       getSearchedTitle("movie", value).then((res) => {
         const results = res.slice(0, res.length - 1);
-        results.length >= 1 ? setOptions([...results]) : setOptions();
+        return results.length >= 1 ? setOptions([...results]) : setOptions();
       });
     if (value.length === 0) setOptions();
   }, [value]);

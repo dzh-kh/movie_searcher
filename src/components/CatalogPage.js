@@ -61,7 +61,7 @@ function CatalogPage() {
       });
   }, [filterParams, currentPage]);
   const [isShown, setIsShown] = useState(false);
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 780);
+  const [isMobile] = useState(() => window.innerWidth < 780);
 
   return (
     <Container maxWidth={false} sx={{ m: "1.5em 0" }}>
@@ -139,9 +139,10 @@ function PaginationBar({ count, setCurrentPage, currentPage }) {
       behavior: "smooth",
     });
   };
+  const location = useLocation();
   const params = useLocation().search.split("&").slice(1).join("&");
   const page = useLocation().search.includes("page")
-    ? +useLocation().search.split("=")[1].split("&")[0]
+    ? +location.search.split("=")[1].split("&")[0]
     : 1;
   useEffect(() => setCurrentPage(page), [params]);
   return (
@@ -160,6 +161,7 @@ function PaginationBar({ count, setCurrentPage, currentPage }) {
         <PaginationItem
           component={Link}
           to={`/catalog/?page=${item.page}&${params}`}
+          /* eslint-disable react/jsx-props-no-spreading */
           {...item}
         />
       )}
