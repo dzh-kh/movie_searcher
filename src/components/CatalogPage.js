@@ -160,7 +160,7 @@ function PaginationBar({ count, setCurrentPage, currentPage }) {
       renderItem={(item) => (
         <PaginationItem
           component={Link}
-          to={`/catalog/?page=${item.page}&${params}`}
+          to={`/?page=${item.page}&${params}`}
           /* eslint-disable react/jsx-props-no-spreading */
           {...item}
         />

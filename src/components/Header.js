@@ -52,10 +52,7 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Box style={{ display: "flex", alignItems: "center" }}>
-            <Link
-              style={{ textDecoration: "none", color: "white" }}
-              to="/catalog"
-            >
+            <Link style={{ textDecoration: "none", color: "white" }} to="/">
               <IconButton
                 size="large"
                 edge="start"

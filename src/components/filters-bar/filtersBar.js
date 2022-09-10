@@ -129,7 +129,7 @@ function FiltersBar() {
       onSubmit={(value) => {
         const params = getParams(value);
         dispatch(paramsFetched(params));
-        navigate(`/catalog/?page=1${transformParams(value)}`);
+        navigate(`/?page=1${transformParams(value)}`);
       }}
     >
       {({ setFieldValue, values, resetForm }) => (

@@ -29,7 +29,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/movie/:id/:section" element={<SingleMoviePage />} />
-        <Route path="/catalog/" element={<CatalogPage />} />
+        <Route path="/" element={<CatalogPage />} />
         <Route path="/collection/:id" element={<SingleCollectionPage />} />
         <Route path="/search/" element={<SearchedTitleList />} />
         <Route path="/user/" element={<UserPage />} />

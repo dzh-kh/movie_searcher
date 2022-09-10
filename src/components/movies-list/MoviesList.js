@@ -159,7 +159,7 @@ function SingleMovieTooltip({ movieInfo }) {
           <Typography sx={style}>{`popularity: ${popularity}`}</Typography>
         </Grid>
         <Grid item>
-          <Typography sx={style}>
+          <Typography component="div" sx={style}>
             <Typography>{`vote: ${vote}`}</Typography>
             <Rating max={10} value={vote} />
           </Typography>
