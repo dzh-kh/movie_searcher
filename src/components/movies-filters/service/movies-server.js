@@ -14,7 +14,7 @@ const useMoviesService = () => {
 
   const getSearchedTitle = async (title, name, page = 1) => {
     const res = await request(
-      `${_apiBase}3/search/${title}?api_key=${_apiKey}&language=en-US&query=${name}&page=${page}`
+      `${_apiBase}3/search/${title}?api_key=${_apiKey}&language=en-US&query=${name}&page=${page}`,
     );
     return title === "movie"
       ? res.results
@@ -33,7 +33,7 @@ const useMoviesService = () => {
 
   const getCollectionMovies = async (id) => {
     const res = await request(
-      `${_apiBase}3/collection/${id}?api_key=${_apiKey}&language=en-US`
+      `${_apiBase}3/collection/${id}?api_key=${_apiKey}&language=en-US`,
     );
     return res.parts
       .map((movie) => _movieTransform(false, movie))
@@ -49,7 +49,7 @@ const useMoviesService = () => {
 
   const getFilteredMovies = async (getParams, page = 1) => {
     const res = await request(
-      `${_apiBase}3/discover/movie?api_key=${_apiKey}&page=${page}&language=en-US${getParams}`
+      `${_apiBase}3/discover/movie?api_key=${_apiKey}&page=${page}&language=en-US${getParams}`,
     );
     return res.results.map((movie) => {
       const totalPages = { totalPages: res.total_pages };
@@ -59,46 +59,46 @@ const useMoviesService = () => {
 
   const getSimilarMovies = async (id) => {
     const res = await request(
-      `${_apiBase}3/movie/${id}/similar?api_key=${_apiKey}&page=1&language=en-US`
+      `${_apiBase}3/movie/${id}/similar?api_key=${_apiKey}&page=1&language=en-US`,
     );
     return res.results.map((movie) => _movieTransform(false, movie));
   };
 
   const getPopularMovies = async () => {
     const res = await request(
-      `${_apiBase}3/movie/popular?api_key=${_apiKey}&language=ru-RU&page=1`
+      `${_apiBase}3/movie/popular?api_key=${_apiKey}&language=ru-RU&page=1`,
     );
     return res.results.map((movie) => _movieTransform(false, movie));
   };
 
   const getMovieReviews = async (id) => {
     const res = await request(
-      `${_apiBase}3/movie/${id}/reviews?api_key=${_apiKey}&language=en-US&page=1`
+      `${_apiBase}3/movie/${id}/reviews?api_key=${_apiKey}&language=en-US&page=1`,
     );
     return res.results.map((review) => _movieReviewTransform(review));
   };
 
   const getMovieCast = async (id) => {
     const res = await request(
-      `${_apiBase}3/movie/${id}/credits?api_key=${_apiKey}&language=en-US&page=1`
+      `${_apiBase}3/movie/${id}/credits?api_key=${_apiKey}&language=en-US&page=1`,
     );
     return res.cast
       .map((actor) => _castTransform(actor))
       .concat(
-        _castTransform(res.crew.filter((el) => el.job === "Director")[0])
+        _castTransform(res.crew.filter((el) => el.job === "Director")[0]),
       );
   };
 
   const getMovieDetails = async (id) => {
     const res = await request(
-      `${_apiBase}3/movie/${id}?api_key=${_apiKey}&language=en-US`
+      `${_apiBase}3/movie/${id}?api_key=${_apiKey}&language=en-US`,
     );
     return _movieTransform(true, res);
   };
 
   const getMovieGenresList = async () => {
     const res = await request(
-      `${_apiBase}3/genre/movie/list?api_key=${_apiKey}&language=en-US`
+      `${_apiBase}3/genre/movie/list?api_key=${_apiKey}&language=en-US`,
     );
     return res.genres;
   };

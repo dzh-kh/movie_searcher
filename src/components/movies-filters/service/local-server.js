@@ -1,6 +1,8 @@
-const _apiBase = "http://localhost:3001/";
+const _apiBase =
+  "https://movie-searcher-1.herokuapp.com/api" || "http://localhost:3001/";
 
 const useLocalServer = () => {
+  console.log(_apiBase);
   const request = async (url, option) => {
     try {
       const response = await fetch(url, option);
